@@ -5,14 +5,14 @@
   */
 
 public class RationalMatrix { 
-	Rational[][] matrix;
+	private Rational[][] matrix;
 	
 	/**
-	 * 
+	 * Initializes the a single cell as 0
 	 */
 	public RationalMatrix() {
 		matrix = new Rational[1][1];
-		matrix[1][1] = new Rational();
+		matrix[0][0] = new Rational(0,1);
 	}
 	
 	/**
