@@ -19,6 +19,11 @@ public class Rational extends Number implements Comparable<Rational>{
 		denominator = 1;
 	}
 	
+	public Rational (long num) {
+		numerator = num;
+		denominator = 1;
+	}
+	
 	public Rational (long num, long denom) throws IllegalArgumentException{
 		if (denom == 0)
 			throw new IllegalArgumentException("Divide by zero error");
